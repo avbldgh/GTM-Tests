@@ -5,6 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gtm-tests</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K67BX271SB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('event', 'add_to_cart', {
+            'items': [
+            'id': 'U1234',
+            'ecomm_prodid': 'U1234',
+            'name': 'Argyle Funky Winklepickers',
+            'list': 'Search Results',
+            'category': 'Footwear',
+            'quantity': 1,
+            'ecomm_totalvalue': 123.45,
+            'price': 123.45
+            ]
+        });
+    </script>
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
